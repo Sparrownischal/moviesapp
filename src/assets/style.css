@@ -5,7 +5,8 @@
     transform: translate(-50%, 0%);
 }
 .bg-nav{
-    background: rgb(0 0 0 / 19%);
+    background: rgb(2 2 2 / 40%);
+    /* background-color: rgba(2, 2, 2, 0.40)  ; */
     color: white;
 }
 .carousel-container{
@@ -33,4 +34,35 @@
     width: 100%;
     object-fit: cover;
     object-position: center top;
+}
+
+.footer-container{
+    margin-bottom: 0;
+    padding: 0%;
+    background-color: rgba(2, 2, 2, 0.40);
+}
+
+.list-img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+.footer-container ul li{
+    list-style: none;
+    list-style-position: outside;
+}
+.footer-container a{
+    text-decoration: none;
+}
+
+.movieDetail .movieImg{
+    width: 100%;
+    height: auto;
+
+}
+.movietile a{
+    text-decoration: none;
 }

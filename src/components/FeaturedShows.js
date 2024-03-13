@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { MovieContext } from '../contexts/MovieContexts';
+import { Link } from 'react-router-dom';
 const FeaturedShows = () => {
   const settings = {
     dots: false,
@@ -33,7 +34,9 @@ const FeaturedShows = () => {
       <Slider {...settings}>
         {movies.map(movie => (
           <div className="movie-slide" key={movie.id}>
-            <img className='slic-img' src={movie.bgImg} alt={movie.title} />
+             <Link to={`/shows/${movie._id}`}>
+              <img className='slic-img' src={movie.bgImg} alt={movie.title} />
+            </Link>
             <h3>{movie.title}</h3>
           </div>
         ))}

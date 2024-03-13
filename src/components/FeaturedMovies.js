@@ -4,13 +4,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { MovieContext } from '../contexts/MovieContexts';
+import { Link } from 'react-router-dom';
 
 const FeaturedMovies = () => {
-  // const history = useHistory();
-
-  // const handleMovieClick = (movieId) => {
-  //   history.push('/movies/${movieId}');
-  // };
   const settings = {
     dots: false,
     infinite: true,
@@ -19,15 +15,15 @@ const FeaturedMovies = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
           slidesToShow: 2
         }
       },
       {
-        breakpoint: 480, 
+        breakpoint: 480,
         settings: {
-          slidesToShow: 1 
+          slidesToShow: 1
         }
       }
     ]
@@ -41,8 +37,9 @@ const FeaturedMovies = () => {
         {movies.map(movie => (
           <div className='movie-slide' key={movie.id}
           >
-            {/* onClick={() => handleMovieClick(movie.id)} */}
-            <img className='slic-img' src={movie.bgImg} alt={movie.title} />
+            <Link to={`/movies/${movie._id}`}>
+              <img className='slic-img' src={movie.bgImg} alt={movie.title} />
+            </Link>
             <h3>{movie.title}</h3>
           </div>
         ))}

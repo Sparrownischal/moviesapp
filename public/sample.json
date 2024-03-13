@@ -1,0 +1,67 @@
+{
+    "movies": [
+      {
+        "_id": 1,
+        "title": "Transformer",
+        "year": "2023",
+        "category": "Adventure",
+        "details": {
+          "titleImg": "../assets/movies/transformer-title.png",
+          "bgImg": "../assets/movies/bg-transformer.jpg",
+          "previewImg": "../assets/movies/transformer.jpg",
+          "video": "https://www.youtube.com/embed/TxPNrwbuxN0",
+          "date": "18th September",
+          "ageLimit": "15+",
+          "length": "2h 07min",
+          "type": "coming",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo felis tempor augue tristique, eget dignissim sapien ornare. Nullam vel hendrerit metus, a interdum risus. Etiam commodo lorem arcu, a tempus risus tempus sed. Proin ornare nec massa eget rhoncus. In rutrum aliquet dui, et placerat est molestie id.",
+          "active": true,
+          "featured": true,
+          "views": 0
+        }
+      },
+      {
+        "_id": 2,
+        "title": "Meg 2",
+        "year": "2023",
+        "category": "Thriller",
+        "details": {
+          "titleImg": "../assets/movies/meg-2-title.png",
+          "bgImg": "../assets/movies/bg-meg-2.jpeg",
+          "previewImg": "../assets/movies/meg-2.jpg",
+          "video": "https://www.youtube.com/embed/dG91B3hHyY4",
+          "date": "04th August",
+          "ageLimit": "16+",
+          "length": "1h 56min",
+          "type": "coming",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo felis tempor augue tristique, eget dignissim sapien ornare. Nullam vel hendrerit metus, a interdum risus. Etiam commodo lorem arcu, a tempus risus tempus sed. Proin ornare nec massa eget rhoncus. In rutrum aliquet dui, et placerat est molestie id.",
+          "active": false,
+          "featured": true,
+          "views": 0
+        }
+      }
+    ],
+    "shows": [
+      {
+        "_id": 1,
+        "title": "The Witcher",
+        "year": "2023",
+        "category": "Fantasy",
+        "details": {
+          "titleImg": "../assets/shows/witcher-title.png",
+          "bgImg": "../assets/shows/bg-witcher.jpg",
+          "previewImg": "../assets/shows/witcher.jpg",
+          "video": "https://www.youtube.com/embed/ndl1W4ltcmg",
+          "date": "25th December",
+          "ageLimit": "18+",
+          "length": "1 Season",
+          "type": "streaming",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo felis tempor augue tristique, eget dignissim sapien ornare. Nullam vel hendrerit metus, a interdum risus. Etiam commodo lorem arcu, a tempus risus tempus sed. Proin ornare nec massa eget rhoncus. In rutrum aliquet dui, et placerat est molestie id.",
+          "active": true,
+          "featured": true,
+          "views": 0
+        }
+      }
+    ]
+  }
+  
