@@ -8,6 +8,8 @@ import Movies from './pages/Movies';
 import Shows from './pages/Shows';
 import MovieDetail from './pages/MovieDetail';
 import ShowDetail from './pages/ShowDetail';
+import UserHome from './pages/UserHome';
+import SearchPage from './pages/SearchPage';
 // import { MovieProvider } from './contexts/MovieContexts';
 
 function App() {
@@ -22,7 +24,8 @@ function App() {
           {/* <Route exact path="/movies/:id" element={<MovieDetail />} /> */}
           <Route exact path="/movies/:_id" element={<MovieDetail />} />
           <Route exact path="/shows/:_id" element={<ShowDetail />} />
-
+          <Route exact path='/dashboard' element={<UserHome />} />
+          <Route exact path='/searchResults' element={<SearchPage />}/>
         </Routes>
         <Footer></Footer>
       </Router>

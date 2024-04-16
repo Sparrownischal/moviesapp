@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import LoginModal from './login';
+import SearchInput from './SearchInput';
 
 function Header() {
   const [modalShow, setModalShow] = React.useState(false);
@@ -21,6 +22,7 @@ function Header() {
             <Nav.Link as={Link} to="/movies">Movies</Nav.Link>
             <Nav.Link as={Link} to="/shows">Shows</Nav.Link>
           </Nav>
+          <SearchInput />
           <LoginModal />
         </Navbar.Collapse>
       </Container>

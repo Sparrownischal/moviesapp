@@ -1,5 +1,6 @@
 
 import React, { createContext, useState, useEffect } from 'react';
+import API_BASE_URL from '../config';
 
 const MovieContext = createContext();
 
@@ -7,10 +8,15 @@ const MovieProvider = ({ children }) => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-        fetch('db.json')
+        fetch(`${API_BASE_URL}/movies`)
             .then(response => response.json())
-            .then(data => setMovies(data))
+            .then(data => {
+                setMovies(data.data);
+                // console.log(data.data);
+            }
+            )
             .catch(error => console.error('Error fetching movies:', error));
+
     }, []);
 
     return (

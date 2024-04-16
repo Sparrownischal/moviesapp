@@ -17,7 +17,7 @@ function ControlledCarousel() {
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {latestMovies.map((movie) => (
           <Carousel.Item key={movie.id}>
-            <Link to={`/movies/${movie._id}`}><img className='carousel-img' src={movie.bgImg} alt={movie.title} /></Link>
+            <Link to={`/movies/${movie.id}`}><img className='carousel-img' src={movie.bgImg} alt={movie.title} /></Link>
             <Carousel.Caption>
               <h3>{movie.title}</h3>
               <p>{movie.description}</p>

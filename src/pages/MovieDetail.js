@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Row } from 'react-bootstrap';
-import { MovieContext } from '../contexts/MovieContexts';
-
+import API_BASE_URL from '../config';
 const MovieDetail = () => {
     let { _id: movieId } = useParams();
-    movieId =movieId - 1;
     const [movie, setMovie] = useState(null); // State to store movie data
-    const movieURL = `http://localhost:3000/${movieId}`;
+    const movieURL = `${API_BASE_URL}/movies/${movieId}`;
 
     useEffect(() => {
         // Fetch movie data when the component mounts
@@ -46,6 +44,10 @@ const MovieDetail = () => {
                         </div>
                         <div className='col-md-8 text-start'>
                             <p>Title: {movie.title} </p>
+                            <p>Buy Price: {movie.price} </p>
+                            <p>Rent Price: {movie.rent} </p>
+                            <p>Views:{movie.views}</p>
+
                             <p>{movie.description}</p>
                             <p>Length: {movie.length}</p>
                             <p>Release : {movie.year} {movie.date}</p>
