@@ -37,7 +37,7 @@ const FeaturedMovies = () => {
         {movies.map(movie => (
           <div className='movie-slide' key={movie.id}
           >
-            <Link to={`/movies/${movie._id}`}>
+            <Link to={`/movies/${movie.id}`}>
               <img className='slic-img' src={movie.bgImg} alt={movie.title} />
             </Link>
             <h3>{movie.title}</h3>
